@@ -4,7 +4,7 @@
 
 <section class="py-5">
   <div class="container">
-    <form action="{{ route('create') }}" method="POST" >
+    <form action="{{ route('store') }}" method="POST" >
 
       @csrf
 
@@ -18,22 +18,32 @@
       </div>
       <div class="mb-3">
         <label for="cooking_time" class="form-label">Price</label>
-        <input type="text" class="form-control" name="cooking_time" id="cooking_time" placeholder="Price">
+        <input type="text" class="form-control" name="price" id="price" placeholder="Price"
+            value="100">
       </div>
 
       <div class="mb-3">
-        <label for="weight" class="form-label">Sale date</label>
-        <input type="text" class="form-control" name="weight" id="weight" placeholder="Sale">
+        <label for="sale_date" class="form-label">Sale date</label>
+        <input type="date" class="form-control" name="sale_date" id="sale_date" placeholder="Sale">
       </div>
 
       <div class="mb-3">
-        <label for="weight" class="form-label">Type</label>
-        <input type="text" class="form-control" name="weight" id="weight" placeholder="Type">
+        <label for="weight" class="form-label">Series</label>
+        <input type="text" class="form-control" name="series" id="series" placeholder="Series">
       </div>
 
       <div class="mb-3">
-        <label for="description" class="form-label">Type</label>
+        <label for="type" class="form-label">Type</label>
+        <input type="text" class="form-control" name="type" id="type" placeholder="Type">
+      </div>
+
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
         <textarea class="form-control" name="description" id="description" rows="3" placeholder="Descripton"></textarea>
+      </div>
+
+      <div class="">
+        <input type="submit" class="btn btn-primary" value="create">
       </div>
 
       

@@ -13,6 +13,9 @@
             <th>Price</th>
             <th>Sale_date</th>
             <th>Type</th>
+            <th>
+              <a href="{{ route('create') }}" class="btn btn-sm btn-primary">New Comic</a>
+            </th>
             
           </tr>
         </thead>
