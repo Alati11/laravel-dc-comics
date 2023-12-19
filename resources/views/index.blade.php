@@ -19,15 +19,23 @@
         <tbody>
           @forelse ($comics as $comic)
               <tr>
-                <td>{{ $comic->title }}</td>
+                <td>
+                  <a href="{{ route('show',$comic) }}">
+                    {{ $comic->title }}
+                  </a>
+                </td>
                 <td>{{ $comic->description }}</td>
                 <td>
-                  <img src="{{ $comic->thumb }}" width="40" alt="">
+                  <img src="{{ $comic->thumb }}" width="80" alt="">
                 </td>
                 <td>{{ $comic->price }}</td>
                 <td>{{ $comic->series }}</td>
                 <td>{{ $comic->sale_date }}</td>
                 <td>{{ $comic->type }}</td>
+                <td>
+                  <span>edit</span>
+                  <span>delete</span>
+                </td>
               </tr>
           @empty
               <tr>
