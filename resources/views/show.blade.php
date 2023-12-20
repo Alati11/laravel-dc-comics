@@ -17,6 +17,9 @@
       </p>
         {{ $comic->type }}
       </p>
+
+      <p><a href="{{ route('edit',$comic)}}" class="btn btn-primary">Edit</a></p>
+
     </div>
   </section>
 
