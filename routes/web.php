@@ -29,4 +29,10 @@ Route::get('/create', [ComicController::class, 'create'])
 
 Route::post('comics', [ComicController::class, 'store'])
     ->name('store');
+
+Route::get('{comic}/edit', [ComicController::class, 'edit'])
+    ->name('edit');    
+
+Route::put('{comic}', [ComicController::class, 'update'])
+    ->name('update');    
     

@@ -36,7 +36,7 @@
                 <td>{{ $comic->sale_date }}</td>
                 <td>{{ $comic->type }}</td>
                 <td>
-                  <span>edit</span>
+                  <p><a href="{{ route('edit',$comic)}}" class="btn btn-primary" >Edit</a></p>
                   <span>delete</span>
                 </td>
               </tr>
